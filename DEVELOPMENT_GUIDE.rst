@@ -88,7 +88,8 @@ Verifying transforms
 
 If you make changes to the transformer and want to verify the resulting CloudFormation template works as expected, you can transform your SAM template into a CloudFormation template using the following process:
 
-```shell
+```
+shell
 # Optional: You only need to run the package command in certain cases; e.g. when your CodeUri specifies a local path
 # Replace MY_TEMPLATE_PATH with the path to your template and MY_S3_BUCKET with an existing S3 bucket
 aws cloudformation package --template-file MY_TEMPLATE_PATH/template.yaml --output-template-file output-template.yaml --s3-bucket MY_S3_BUCKET
