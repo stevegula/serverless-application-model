@@ -78,10 +78,10 @@ Profiling
 
 Install snakeviz `pip install snakeviz`
 
-::
-  python -m cProfile -o sam_profile_results bin/sam-translate.py translate --input-file=tests/translator/input/alexa_skill.yaml --output-file=cfn-template.json
-  snakeviz sam_profile_results
-
+```
+python -m cProfile -o sam_profile_results bin/sam-translate.py translate --input-file=tests/translator/input/alexa_skill.yaml --output-file=cfn-template.json
+snakeviz sam_profile_results
+```
 
 Verifying transforms
 --------------------
